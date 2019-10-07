@@ -15,6 +15,7 @@
     "transpile": "yarn run babel --presets react,es2015 js/source -d js/build",
     "bundle": "yarn browserify js/build/app.js -o bundle.js",
     "css": "cat css/*/* css/*.css | sed 's/..\\\/..\\\/images/images/g' > bundle.css",
-    "build": "yarn run css && yarn run transpile && yarn run bundle"
+    "build": "yarn run css && yarn run transpile && yarn run bundle",
+    "dev": "open -a \"Google Chrome\" index.html"
   }
 }
